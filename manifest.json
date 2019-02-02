@@ -1,0 +1,15 @@
+{
+	"name": "Block Twitter Timeline",
+	"version": "1.0",
+	"description": "Blocks the Twitter timeline",
+	"permissions": [
+		"https://twitter.com/"
+	],
+	"content_scripts": [{
+		"matches": ["https://twitter.com/"],
+		"css": [],
+		"js": ["blockTimeline.js"],
+		"run_at": "document_end"
+	}],
+	"manifest_version": 2
+}
